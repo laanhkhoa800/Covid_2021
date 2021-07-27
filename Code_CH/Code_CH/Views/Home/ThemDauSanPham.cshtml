@@ -1,0 +1,83 @@
+﻿@model Code_CH.Models.DauSanPham
+@{
+    ViewBag.Title = "ThemDauSanPham";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <div class="Header_Dau_Sach">
+        <div class="row align-items-center ">
+            <div class="col-md-4 ">
+
+            </div>
+            <div class="col-md-4">
+                <h3 class="Them-Dau-sach-header-content"> Thêm Nguồn Sản phẩm Mới</h3>
+            </div>
+            <div class="col-md-4">
+                <a class="DauSach-btn-add" href="@Url.Action("Index","Home")"> <i class="fas fa-chevron-left"></i> Quay lại</a>
+            </div>
+        </div>
+    </div>
+   @* @using (Html.BeginForm("ThemDauSanPham", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))*@
+    @using (Html.BeginForm("ThemDauSanPham","Home",FormMethod.Post, new { enctype ="multipart/form-data"} ))
+    {
+
+    @Html.AntiForgeryToken();
+   @Html.HiddenFor(model => model.hinhanhSP)
+    <div class="login_register">
+        <div class="changePass">
+            <div class="mess-suss-ThemDauSach">@ViewBag.ThemDauSanPham</div> <!-- bỏ viewbag vào dây -->
+            @*<div class="ThemDauSach-field ">
+            <i class="fas fa-user-edit"></i>
+            <input type="text" class="ThemDauSach-input " placeholder="Mã đầu sản phẩm tự tăng" required name="maDauSanPham">
+        </div>*@
+            @* <div class="ThemDauSach-field ">
+            <i class="fas fa-user-edit"></i>
+            <input type="text" class="ThemDauSach-input " placeholder="Nhập tên sản phẩm" required name="tenSanPham">
+        </div>
+        <div class="ThemDauSach-field ">
+            <i class="fas fa-tag"></i>
+            <input type="text" class="ThemDauSach-input " placeholder="Nhập loại sản phẩm" required name="theLoai">
+        </div>
+        <div class="ThemDauSach-field ">
+            <i class="fas fa-money"></i>
+            <input type="text" class="ThemDauSach-input " placeholder="Nhập gia cho 1 sản phẩm" required name="gia">
+        </div>*@
+            <b>Tên Sản phẩm</b>
+            <div class="ThemDauSach-field">
+                <i class="fas fa-user-edit"></i>
+                @Html.EditorFor(model => model.tenSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.tenSP, "", new { @class = "text-danger" })
+            </div>
+            <b>Loại Sản phẩm</b>
+            <div class="ThemDauSach-field">
+                <i class="fas fa-tag"></i>
+                @Html.EditorFor(model => model.loaiSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.loaiSP, "", new { @class = "text-danger" })
+            </div>
+            <b>Giá Tiền</b>
+            <div class="ThemDauSach-field">
+                <i class="fas fa-money"></i>
+                @Html.EditorFor(model => model.giaSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.giaSP, "", new { @class = "text-danger" })
+            </div>
+            <b>Hình ảnh</b>
+            <div class=" ThemDauSach-field ThemDauSach-img">
+                <input type="file" value="img" name="imageUploader" onchange="ShowImg(this, document.getElementById('previewImg'))" />
+                <img src="" id="previewImg" alt="Hinh anh sản phảm">
+            </div>
+            <b>Ghi chú</b>
+            <div class="ThemDauSach-field">
+                <i class="fas fa-sticky-note"></i>
+                @Html.EditorFor(model => model.ghichu, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ghichu, "", new { @class = "text-danger" })
+            </div>
+
+            <button type="submit" class="changePass-submit">Thêm sản phẩm</button>
+
+        </div>
+    </div>}
+
+</body>
+</html>
+

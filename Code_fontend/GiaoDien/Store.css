@@ -1,0 +1,449 @@
+.MainStore {
+    margin: 0px;
+    width: 100%;
+}
+
+.tt_MainStore {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.item_sanpham {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 16px;
+}
+
+.img_sanpham {
+    width: 100%;
+    height: auto;
+}
+
+.name_sanpham {
+    font-style: inherit;
+}
+
+@media screen and (max-width:400px) {
+    .price_sanpham b {
+        font-size: 9px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .name_sanpham b {
+        font-size: 9px;
+    }
+}
+
+.animation_image {
+    text-align: center;
+}
+
+#myDIV {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    animation: mymove 8s infinite;
+    animation-timing-function: linear;
+    /* animation-timing-function: cubic-bezier(0, 0.07, .65, .62); */
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media screen and (max-width: 600px) {
+    #myDIV {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        animation: mymove 25s infinite;
+        animation-timing-function: linear;
+        /* animation-delay: 10s; */
+    }
+}
+
+
+/* Page Sales */
+
+.titel_inImage {
+    background-color: black;
+    color: white;
+    padding: 7px 15px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.img_sales {
+    text-align: center;
+}
+
+.nav_locgiatri {
+    margin-top: 17px;
+}
+
+@media screen and (min-width:300px) {
+    .li_locgiatri {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .li_locgiatri {
+        margin-left: 230px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .li_locgiatri {
+        margin-left: 380px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .li_locgiatri {
+        margin-left: 460px;
+    }
+}
+
+.ul_locgiatri {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.li_locgiatri {
+    float: left;
+}
+
+.li_locgiatri a {
+    display: block;
+    /* color: white; */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropbtnsearch {
+    /* background-color: #4CAF50; */
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdownsearch {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentsearch {
+    color: white;
+    display: none;
+    position: absolute;
+    background-color: #252525;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-contentsearch a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* .dropdown-contentsearch a:hover {
+    background-color: #f1f1f1
+}
+ */
+
+.dropdownsearch:hover .dropdown-contentsearch {
+    display: block;
+}
+
+.dropbtn_ThuTu {
+    /* background-color: #4CAF50; */
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown_ThuTu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content_ThuTu {
+    display: none;
+    position: absolute;
+    /* background-color: #ffffff; */
+    /* min-width: 150px; */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content_ThuTu input {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border: none;
+}
+
+.dropdown-content_ThuTu input:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.dropdown_ThuTu:hover .dropdown-content_ThuTu {
+    display: block;
+}
+
+.locgia {
+    width: 100%;
+    background-color: rgb(0, 90, 224);
+    border: none;
+}
+
+.locgia:hover {
+    background-color: rgb(3, 54, 192);
+}
+
+.nav_locgiatri {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.nav_locgiatri ul {
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-top-color: rgb(128, 125, 125);
+    border-top-width: 1px;
+}
+
+
+/* CSS Chi Tiết Sản phẩm */
+
+.Page_ChiTietSanPham {
+    /* background-color: cadetblue; */
+    width: 100%;
+}
+
+.Image_Content {
+    margin-left: 0px;
+    width: 100%;
+}
+
+.img_motaCTSP {
+    float: left;
+    margin-left: 5px;
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+}
+
+.img_motaCTSP img {
+    width: 70px;
+    height: 100px;
+    background-size: cover;
+}
+
+.img_motaCTSP:active {
+    border: 2px black;
+}
+
+@media screen and (max-width:1400px) {
+    .Image_ChiTietSanPham {
+        width: 65%;
+        height: 600px;
+        float: left;
+        /* background-color: lawngreen; */
+        text-align: center;
+    }
+    .imgchitietsanpham {
+        background-size: cover;
+        width: 320px;
+        height: 400px;
+    }
+    /* Content */
+    .Content_ChiTietSanPham {
+        width: 35%;
+        height: 600px;
+        float: right;
+        /* background-color: lightblue; */
+    }
+    .header_contenCTSP {
+        width: 100%;
+        text-align: center;
+        line-height: 2px;
+        margin-top: 20px;
+    }
+    .checkbox_sizeCTSP {
+        /* border-color: black; */
+        width: 100%;
+        margin-top: 17px;
+        width: 80px;
+        height: 25px;
+        margin-left: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 7px;
+        float: left;
+    }
+    .form_check {
+        width: 100%;
+        text-align: center;
+    }
+    .themgiohang {
+        background-color: white;
+        padding-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .Image_ChiTietSanPham {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .list_imgCTSP {
+        margin-left: 30px;
+        width: 100%;
+        /* text-align: center; */
+    }
+    .img_motaCTSP img {
+        width: 40px;
+        height: 60px;
+        background-size: cover;
+    }
+    .Content_ChiTietSanPham {
+        width: 100%;
+        height: auto;
+    }
+    .imgchitietsanpham {
+        background-size: cover;
+        width: 240px;
+        height: 300px;
+    }
+    .Image_Content {
+        /* text-align: center; */
+    }
+}
+
+.themgiohang button:hover {
+    background-color: black;
+    color: white;
+}
+
+.muasanpham button {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.muasanpham button:hover {
+    opacity: 0.5;
+}
+
+.titel_poster_CTSP h3 {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding: 10px;
+}
+
+
+/* wrapper Chi tiết sản phẩm */
+
+@media screen and(max-width:400px) {
+    .wrapper_CTSP {
+        max-height: 160px;
+        /* border: 1px solid black; */
+        border-bottom-style: solid;
+        border-bottom-color: rgb(0, 0, 0);
+        border-bottom-width: 2px;
+        border-top-style: solid;
+        border-top-color: rgb(0, 0, 0);
+        border-top-width: 1px;
+        display: flex;
+        overflow-x: auto;
+        /* overflow-x: hidden; */
+    }
+    .wrapper_CTSP .item_CTSP {
+        min-width: 250px;
+        margin-left: 2px;
+        height: 150px;
+        padding: 3px;
+        line-height: 110px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    }
+    .item_CTSP:hover {
+        border: 1px solid black;
+    }
+    .img_sanphamWP {
+        width: 30px;
+        height: 90px;
+        border-radius: 5px;
+    }
+    .wrarap_Sanpham {
+        line-height: 20px;
+    }
+}
+
+.wrapper_CTSP {
+    max-height: 360px;
+    /* border: 1px solid black; */
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-top-color: rgb(0, 0, 0);
+    border-top-width: 1px;
+    display: flex;
+    overflow-x: auto;
+    /* overflow-x: hidden; */
+}
+
+.wrapper_CTSP::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper_CTSP .item_CTSP {
+    min-width: 250px;
+    margin-left: 2px;
+    height: 350px;
+    padding: 3px;
+    line-height: 110px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.item_CTSP:hover {
+    border: 1px solid black;
+}
+
+.img_sanphamWP {
+    width: 230px;
+    height: 290px;
+    border-radius: 5px;
+}
+
+.wrarap_Sanpham {
+    line-height: 20px;
+}

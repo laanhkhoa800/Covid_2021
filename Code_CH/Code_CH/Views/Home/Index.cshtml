@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Code_CH.Models.DauSanPham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    @using (Html.BeginForm("Index", "Home"))
+    {
+
+        <div class="Header_Dau_Sach">
+            <div class="row align-items-center ">
+                <div class="col-md-4 ">
+                    <h3 class="Dau-sach-header-content"> Danh sách sản phẩm</h3>
+                </div>
+                <div class="col-md-4 DauSach-btn-search">
+                    @******Thanh tìm kiếm*******@
+                    <input type="search" name="_name" placeholder="Search....">
+                </div>
+                <div class="col-md-4">
+                    <a class="DauSach-btn-add" href="@Url.Action("ThemDauSanPham","Home")">Thêm sản phẩm</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="list_DauSach_table">
+            <table class="table_DauSach">
+                <thead>
+                    <tr>
+                        <td class="table_DauSach_MaSach">Mã </td>
+                        <td>Tên sản phẩm</td>
+                        <td>Loại</td>
+                        <td>Hình ảnh</td>
+                        <td class="table_DauSach_SoLuong">Số lượng</td>
+                        <td class="table_DauSach_NamXuatBan">Giá</td>
+                        <td class="table_DauSach_ChucNang"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(a => item.maDSP)</td>
+                            <td>@Html.DisplayFor(a => item.tenSP)</td>
+                            <td>@Html.DisplayFor(a => item.loaiSP)</td>
+                            <td>@Html.DisplayFor(a => item.hinhanhSP)</td>
+                            @*<td><img src="@Html.DisplayFor(a => item.hinhanhSP)" id="previewImg" alt="ismg_sanPham" style="width:35px;height:35px" /></td>*@
+                            <td>@Html.DisplayFor(a => item.soluongSP)</td>
+                            <td>@Html.DisplayFor(a => item.giaSP)</td>
+                            <td class="table_DauSach_btn">
+                                <a href="@Url.Action("SuaDauSanPham","Home",new {id=item.maDSP })"><i class="fas fa-wrench"><!-- Sửa --></i></a>
+                                <a onclick="return confirm('Bạn chắc chắc muốn xóa sản phẩm   @Html.DisplayFor(a=>item.tenSP) với mã @Html.DisplayFor(a=>item.maDSP)')" href="@Url.Action("XoaDauSanPham","Home",new { id=item.maDSP})"><i class="fas fa-trash-alt"><!-- Xoá --></i></a>
+                                <a href="@Url.Action("EditUploadImage","Home",new {id=item.maDSP })"><i class="fas fa-images"><!-- Sửa --></i></a>
+                                <a style="text-decoration:none" href="@Url.Action("ThemChiTietSanPham","Home",new { id=item.maDSP})">+SL</a>
+                            </td>
+                        </tr>
+}
+
+                </tbody>
+            </table>
+        </div>}
+</body>
+</html>

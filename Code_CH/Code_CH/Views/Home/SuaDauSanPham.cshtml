@@ -1,0 +1,99 @@
+﻿@model Code_CH.Models.DauSanPham
+
+@{
+    ViewBag.Title = "SuaDauSanPham";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <div class="Header_Dau_Sach">
+        <div class="row align-items-center ">
+            <div class="col-md-4 ">
+
+            </div>
+            <div class="col-md-4">
+                <h3 class="Them-Dau-sach-header-content"> Edit Sản Phẩm ' @Url.Content(Model.tenSP) '</h3>
+            </div>
+            <div class="col-md-4">
+                <a class="DauSach-btn-add" href="@Url.Action("Index","Home")"> <i class="fas fa-chevron-left"></i> Quay lại</a>
+            </div>
+        </div>
+    </div>
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+@*    @Html.HiddenFor(model => model.maDSP)*@
+    @* <div class="mess-suss-ThemDauSach">@ViewBag.SuaDauSach_suss</div>*@
+    <div class="login_register">
+        <div class="changePass">
+            <div class="form-group">
+                @Html.LabelFor(model => model.tenSP, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.tenSP, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.tenSP, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.loaiSP, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.loaiSP, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.loaiSP, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            @* <div class="form-group">
+            @Html.LabelFor(model => model.hinhanhSP, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.hinhanhSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.hinhanhSP, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+         @*   <div class=" ThemDauSach-field ThemDauSach-img">
+                <input type="file" value="img" name="imageUploader" onchange="ShowImg(this, document.getElementById('previewImg'))" />
+                <img src="@Url.Content(Model.hinhanhSP)" id="previewImg" alt="Hinh anh sach">
+            </div>*@
+
+      
+           @* <div class="ThemDauSach-field ThemDauSach-img">
+                <input type="file" value="img" name="imageUploader2" onchange="ShowImg2(this, document.getElementById('previewImg2'))" />
+                <img src="@Url.Content(Model.hinhanhphu1)" id="previewImg2" alt="Hinh anh sản phảm">
+            </div>
+
+
+            <div class="ThemDauSach-field ThemDauSach-img">
+                <input type="file" value="img" name="imageUploader3" onchange="ShowImg3(this, document.getElementById('previewImg3'))" />
+                <img src="@Url.Content(Model.hinhanhphu2)" id="previewImg3" alt="Hinh anh sản phảm">
+            </div>
+
+            <div class="ThemDauSach-field ThemDauSach-img">
+                <input type="file" value="img" name="imageUploader4" onchange="ShowImg4(this, document.getElementById('previewImg4'))" />
+                <img src="@Url.Content(Model.hinhanhphu3)" id="previewImg4" alt="Hinh anh sản phảm">
+            </div>
+
+            <div class="ThemDauSach-field ThemDauSach-img">
+                <input type="file" value="img" name="imageUploader5" onchange="ShowImg5(this, document.getElementById('previewImg5'))" />
+                <img src="@Url.Content(Model.hinhanhphu4)" id="previewImg5" alt="Hinh anh sản phảm">
+            </div>
+
+            <div class="ThemDauSach-field ThemDauSach-img">
+                <input type="file" value="img" name="imageUploader6" onchange="ShowImg6(this, document.getElementById('previewImg6'))" />
+                <img src="@Url.Content(Model.hinhanhphu5)" id="previewImg6" alt="Hinh anh phu 5">
+            </div>*@
+            <div class="form-group">
+                @Html.LabelFor(model => model.giaSP, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.giaSP, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.giaSP, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <button type="submit" class="changePass-submit">Cập nhật</button>
+        </div>
+    </div>
+</div>
+    }
+

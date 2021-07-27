@@ -1,0 +1,40 @@
+﻿@model Code_CH.Models.SanPham
+
+@{
+    ViewBag.Title = "ThemChiTietSanPham";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <div class="Header_Dau_Sach">
+        <div class="row align-items-center ">
+            <div class="col-md-4 ">
+
+            </div>
+            <div class="col-md-4">
+                <h3 class="Them-Dau-sach-header-content"> Thêm Chi Tiết Sản Phẩm</h3>
+            </div>
+            <div class="col-md-4">
+                <a class="DauSach-btn-add" href="@Url.Action("Index","Home")"> <i class="fas fa-chevron-left"></i> Quay lại</a>
+            </div>
+        </div>
+    </div>
+    @* @using (Html.BeginForm("ThemDauSanPham", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))*@
+    @using (Html.BeginForm("ThemChiTietSanPham", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+
+        @Html.AntiForgeryToken();
+        <div class="login_register">
+            <div class="changePass">
+                @* <div class="mess-suss-ThemDauSach">@ViewBag.Ten_SanPham</div> *@<!-- bỏ viewbag vào dây -->
+
+                <div class="changePass-field NhapSach-SoKiemSoat ">
+                    <input name="sks" type="text" class="changePass-input  " placeholder="Nhập số lượng sản phẩm muốn thêm" required pattern="[0-9]{1,4}" title="Vui lòng nhập số">
+                </div>
+
+                <button type="submit" class="changePass-submit">Thêm</button>
+
+            </div>
+        </div>}
+
+</body>

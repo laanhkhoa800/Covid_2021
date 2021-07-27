@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Code_CH.Models.SanPham>
+
+@{
+    ViewBag.Title = "ChiTietSanPham";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Danh Sách Chi Tiết Sản Phẩm</h2>
+
+<body>
+    @using (Html.BeginForm("ChiTietSanPham", "Home"))
+    {
+
+        <div class="Header_Dau_Sach">
+            <div class="row align-items-center ">
+                <div class="col-md-4 ">
+                    <h3 class="Dau-sach-header-content"> Danh sách chi tiết sản phẩm</h3>
+                </div>
+                <div class="col-md-4 DauSach-btn-search">
+                    @******Thanh tìm kiếm*******@
+                    <input type="search" name="_name" placeholder="Search....">
+                </div>
+              @*  <div class="col-md-4">
+                    <a class="DauSach-btn-add" href="@Url.Action("ThemDauSanPham","Home")">Thêm sản phẩm</a>
+                </div>*@
+            </div>
+        </div>
+
+        <div class="list_DauSach_table">
+            <table class="table_DauSach">
+                <thead>
+                    <tr>
+                        <td class="table_DauSach_MaSach">Mã Sản Phẩm</td>
+                        <td>Số Lượng</td>
+                       @* <td>Image 1</td>
+                        <td>Image 2</td>
+                        <td>Image 3</td>
+                        <td>Image 4</td>
+                        <td>Image 5</td>
+                        <td>Image 6</td>*@
+                        <td class="table_DauSach_ChucNang"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>@Html.DisplayFor(a => item.maSP)</td>
+                        <td>@Html.DisplayFor(a => item.sokiemsoat)</td>
+                     @*   <td><img src="@Html.DisplayFor(a => item.hinhanh1)" alt="img1_sanPham" style="width:25px;height:25px" /></td>
+                        <td><img src="@Html.DisplayFor(a => item.hinhanh2)" alt="img2_sanPham" style="width:25px;height:25px" /></td>
+                        <td><img src="@Html.DisplayFor(a => item.hinhanh3)" alt="img3_sanPham" style="width:25px;height:25px" /></td>
+                        <td><img src="@Html.DisplayFor(a => item.hinhanh4)" alt="img4_sanPham" style="width:25px;height:25px" /></td>
+                        <td><img src="@Html.DisplayFor(a => item.hinhanh5)" alt="img5_sanPham" style="width:25px;height:25px" /></td>
+                        <td><img src="@Html.DisplayFor(a => item.hinhanh6)" alt="img6_sanPham" style="width:25px;height:25px" /></td>*@
+                        <td class="table_DauSach_btn">
+                            <a href="@Url.Action("UpdateHinhAnhSanPham","Home",new {id=item.maDSP })"><i class="fas fa-images"><!-- Sửa --></i></a>
+                            <a href="@Url.Action("XoaDauSanPham","Home",new { id=item.maDSP})"><i class="fas fa-trash-alt"><!-- Xoá --></i></a>
+                            @*<a style="text-decoration:none" href="@Url.Action("ThemChiTietSanPham","Home",new { id=item.maDSP})">Thêm </a>*@
+                        </td>
+                    </tr>
+}
+
+                </tbody>
+            </table>
+        </div>}
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+    <title>The2oS </title>
+    <link href="~/Assets/teamples_User/MainUser.css" rel="stylesheet" />
+    <link rel="icon" href="~/Content/image/Logo_store.PNG"
+          type="image/x-icon">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav  class="row navbar-expand-lg navbar-light bg-light stores">
+        <div class="imglogo">
+            <a href="@Url.Action("Index")"><img src="~/Content/Image/Logo_store.png" alt="logoGrand" /></a>
+        </div>
+        <a class="navbar-brand"  href="@Url.Action("Index")">The2oS</a>
+        <button class="navbar-toggler but_3mobile" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse nav_marginleft" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto UL_HOVER">
+                <li class="nav-item dropdown1">
+                    <a class="nav-link nav_color dropdown1" style="color:black;" href="#" id="dropdown1" role="button" data-toggle="dropdown">
+                        SHOP
+                    </a>
+                    <div style="font-size: 18px;" class="dropdown-content1">
+                        <a class="dropdown-item" href="#">T-SHIRTS</a>
+                        <a class="dropdown-item" href="#">POLO SHIRTS</a>
+                        <a class="dropdown-item" href="#">SWEATERS</a>
+                        <a class="dropdown-item" href="#">SWEAT-SHIRTS</a>
+                        <a class="dropdown-item" href="#">HOODIES</a>
+                        <a class="dropdown-item" href="#">ALL</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav_color" style="color:black;" href="#">RESTOCKS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav_color" style="color:black;" href="#">SALES</a>
+                </li>
+               @* <li class="nav-item dropdown1">
+                    <a class="nav-link nav_color dropdown1" style="color:black;" href="#" id="dropdown1" role="button" data-toggle="dropdown">
+                        SALES
+                    </a>
+                    <div style="font-size: 18px;" class="dropdown-content1">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>*@
+                <li class="nav-item">
+                    <a class="nav-link nav_color" style="color:black;" href="#" tabindex="-1" aria-disabled="true">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav_color" style="color:black;" href="@Url.Action("About","User")">ABOUT<span class="sr-only">(current)</span></a>
+                </li>
+                <li style="margin-top:10px" class="nav-item dropdown">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </li>
+                <li class="nav-item funsion_header1 dropdown1">
+                    @* <a href="#"><button type="button" class="btn_search"><img class="" src="~/Content/Image/icon/user.PNG" alt="iconsearch" /></button></a>*@
+                    <a href="#"><button type="button" class="btn_search nav_color dropdown1" id="dropdown1"><img class="" src="~/Content/Image/icon/user.PNG" alt="iconsearch" /></button></a>
+                    <div style="font-size: 18px;" class="dropdown-content1">
+                        <a class="dropdown-item" href="#">Đăng Nhập</a>
+                        <a class="dropdown-item" href="#">Đăng Xuất</a>
+                    </div>
+                    @*  <a href="#"><button type="button" class="btn_search dropdown1" id="dropdown1"><img class="" src="~/Content/Image/icon/shopping-bag.png" alt="iconsearch" /></a>
+            <div style="font-size: 18px;" class="dropdown-content1">
+                <a class="dropdown-item" href="#">Đăng Nhập</a>
+                <a class="dropdown-item" href="#">Đăng Xuất</a>
+            </div>*@
+                    @* <button type="button" class="btn_search"><img class="" src="~/Content/Image/icon/shopping-bag.png" alt="iconsearch" /></button>*@
+                </li>
+                <li class="nav-item funsion_header ">
+
+                    @*  <a href="#"><button type="button" class="btn_search dropdown1" id="dropdown1"><img class="" src="~/Content/Image/icon/shopping-bag.png" alt="iconsearch" /></a>
+            <div style="font-size: 18px;" class="dropdown-content1">
+                <a class="dropdown-item" href="#">Đăng Nhập</a>
+                <a class="dropdown-item" href="#">Đăng Xuất</a>
+            </div>*@
+                    <button type="button" class="btn_search"><img class="" src="~/Content/Image/icon/shopping-bag.png" alt="iconsearch" /></button>
+                </li>
+
+            </ul>
+            @* <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>*@
+        </div>
+    </nav>
+    @RenderBody()
+ 
+    <footer>
+        <div class="row hr_phone">
+            <img src='~/Content/Image/icon/phone-call (1).png' alt="icon_phone" style="width:40px;height:40px">
+            <div class="row hr_content">
+                <p>Hổ trợ / mua hàng :</p><b style="padding-left: 10px;color: red;">0369751211</b>
+            </div>
+        </div>
+        <div class="row potter">
+            <div class="col mapsStore">
+                <h5>Hệ thống cửa hàng</h5>
+                <div class="mapsTore">
+                    <div class="row">
+                        <img src="~/Content/Image/icon/maps-and-flags.png" alt="icon_map" style="width:20px; height: 20px;">
+                        <p style="margin-left: 7px;">174/35 Nguyễn Tư Giản, P12, Quận Gò Vấp, TP.Hồ Chí Minh</p>
+                    </div>
+                    <div class="row">
+                        <img src="~/Content/Image/icon/email.png" alt="icon_email" style="width:20px; height: 20px;">
+                        <p style="margin-left: 7px;">laanhkhoa800@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col Social_Network">
+                <h5>Mạng xã Hội</h5>
+                <div class="mapsTor">
+                    <div class="row fb_ins">
+                        <a href="https://www.facebook.com/profile.php?id=100006743716186" target="blank"><img src="~/Content/Image/icon/facebook.png" alt="icon_map" style="width:40px; height: 40px;"></a>
+                        <a href="https://www.instagram.com/_cam_800/" target="blank"><img src="~/Content/Image/icon/instagram.png" alt="icon_map" style="width:40px; height: 40px;margin-left: 20px;"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col Fanpage">
+                <h5>Fanpage</h5>
+                <div class="mapsTores">
+                    <div class="row fb_ins">
+
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <hr style="height: 2px;background-color: black;">
+        <div class="codeer">
+            <p>!coding with Laanhkhoa800!</p>
+        </div>
+    </footer>
+    <!-- </div> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

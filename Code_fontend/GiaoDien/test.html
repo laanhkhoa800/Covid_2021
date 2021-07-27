@@ -1,0 +1,49 @@
+<style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+</head>
+<script>
+    function changeImage(img) {
+        document.getElementById("img").src = img.src.replace("_t", "_b");
+    }
+</script>
+
+<body>
+
+    <div id="main_img">
+        <img id="img" src="./image/shirt.PNG">
+    </div>
+    <div id="thumb_img">
+        <img src='./image/SP02_DT2.PNG' onclick='changeImage(this);'>
+
+        <img src='./image/logo.PNG' onclick='changeImage(this);'>
+    </div>
+    <!-- <div id="main_img">
+        <img id="img" src="./image/SP02_DT4.PNG">
+    </div>
+    <ul id="thumb_img">
+        <li><button data-src='1772031_29_b.jpg'><img src='./image/SP02_DT2.PNG' /></button></li>
+        <li><button data-src='1772031_55_b.jpg'><img src='./image/SP02_DT6.PNG' /></button></li>
+        <li><button data-src='1772031_53_b.jpg'><img src='./image/logo.PNG' /></button></li>
+    </ul> -->
+
+</body>
+
+</html>

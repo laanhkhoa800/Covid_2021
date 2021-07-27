@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Display Date and Time in Javascript</title>
+    <script type="text/javascript" src="date_time.js"></script>
+</head>
+
+<body>
+    <div style="margin-left: 30px;">
+        <div style="float: left;color: #455052; max-width: 290px; width: 100%; border: 1px solid #ffffff; background-image: radial-gradient(circle, #fff, #f5faff, #ffffff);">
+            <script src="https://www.weatherwx.com/weather-js-current/vn/ho+chi+minh+city.js"></script>
+
+        </div>
+        <div style="float: right;padding-top: 10px;padding-bottom: 16px;padding-left: 40px;color: #000000;height: 50px; max-width: 290px; width: 100%;background-color: rgb(252, 252, 252);">
+            <h3><span style="margin-top: 20px;" id="date_time"></span></h3>
+            <script type="text/javascript">
+                window.onload = date_time('date_time');
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>

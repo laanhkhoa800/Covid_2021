@@ -1,0 +1,297 @@
+body {
+    /* position: relative; */
+    margin: 0px;
+    width: 100%;
+    /* height: 4000px; */
+}
+
+.bg-light {
+    margin: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(233, 235, 235);
+}
+
+.imglogo img {
+    /* margin-left: 10px; */
+    width: 80px;
+    height: 50px;
+}
+
+
+/* menu content header */
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav:hover {
+    /* color: rgb(255, 255, 255); */
+    color: black;
+}
+
+.nav :active {
+    color: black;
+}
+
+.content {
+    width: 100%;
+}
+
+.content h3 {
+    color: black;
+}
+
+.content_ul {
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+
+/* funsiton header */
+
+.sumitsearch {
+    width: 1000px;
+}
+
+.content_search {
+    margin-left: 10px;
+}
+
+.funsion_header {
+    margin-left: 100px;
+}
+
+.bodernone {
+    border: none;
+}
+
+.funsion_header button {
+    border: none;
+    margin-left: 10px;
+}
+
+.funsion_header img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon_fs {
+    width: 20px;
+    height: 15px;
+}
+
+.drp_menu {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 1;
+    left: 0px;
+}
+
+
+/* page About */
+
+.containers {
+    width: 700px;
+    background-color: aqua;
+    margin-left: 360px;
+    text-align: center;
+}
+
+.conten_about {
+    /* overflow: visible; */
+    margin-top: 20px;
+    text-align: center;
+    /* line-height: 2; */
+    /* word-wrap: break-word; */
+    white-space: pre-line;
+    /* width: 500px; */
+}
+
+.conten_about_2 {
+    margin-top: 10px;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.hr_phone {
+    margin: 0px;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 20px;
+    background-color: rgb(197, 197, 196);
+}
+
+.hr_content {
+    padding-left: 20px;
+    padding-top: 7px;
+}
+
+.potter {
+    /* text-align: center; */
+    width: 100%;
+}
+
+.mapsStore {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.mapsTore {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.Social_Network {
+    text-align: left;
+    padding-right: 40px;
+}
+
+.cont_about {
+    width: 100%;
+}
+
+.mapsTores {
+    text-align: right;
+}
+
+
+/* coder */
+
+.codeer {
+    text-align: center;
+    opacity: 0.8;
+}
+
+
+/* page accout */
+
+.r_accout div {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login_acout {
+    color: black;
+    width: 100%;
+}
+
+
+/* page mainadmin */
+
+.Mainadmin {
+    z-index: 0;
+}
+
+.menu_mainadmin {
+    margin-left: 50px;
+    /* text-align: center; */
+}
+
+.menu_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    /* background-color: #333; */
+}
+
+.menu_ul li {
+    float: left;
+}
+
+
+/* .dropbtnt {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} */
+
+.menu_ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropbtnt:hover:not(.active) {
+    background-color: #111;
+}
+
+.menu_ul li a:hover:not(.active) {
+    background-color: #111;
+}
+
+
+/* groupdown */
+
+.dropbtnt {
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentt {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(245, 245, 245, 0.2);
+    z-index: 1;
+}
+
+.dropdown-contentt a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contentt a:hover {
+    /* color: rgb(247, 2, 2); */
+    opacity: 0.5;
+}
+
+.dropbtnt:hover .dropdown-contentt {
+    display: block;
+}
+
+.dropdown:hover .dropdown-contentt {
+    display: block;
+}
+
+.dropdownt:hover .dropbtnt {
+    background-color: #3e8e41;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Page_MainStore</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./Store.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+
+    </style>
+    <script>
+        function changeImage(img) {
+            document.getElementById("img").src = img.src.replace("_t", "_b");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container Page_ChiTietSanPham" style="height: 3000px;">
+        <div class="Image_Content">
+            <div class="Image_ChiTietSanPham">
+                <img id="img" class="imgchitietsanpham" src="./image/SP01.PNG">
+                <div class="list_imgCTSP">
+                    <button class="img_motaCTSP">
+                        <img onclick="changeImage(this);" src="./image/SP02_DT2.PNG">
+                    </button>
+                    <button class="img_motaCTSP">
+                        <img onclick="changeImage(this);" src="./image/SP02_DT5.PNG">
+                    </button>
+                    <button class="img_motaCTSP">
+                        <img onclick="changeImage(this);" src="./image/SP02_DT4.PNG" >
+                    </button>
+                    <button class="img_motaCTSP">
+                        <img onclick="changeImage(this);"  src="./image/SP02_DT6.PNG" >
+                    </button>
+                    <button class="img_motaCTSP">
+                        <img onclick="changeImage(this);"  src="./image/SP01.PNG" >
+                    </button>
+                </div>
+            </div>
+            <div class="Content_ChiTietSanPham">
+                <div style="margin-top:30px;" class="header_contenCTSP">
+                    <p>DirtyCoins Print Cardigan - Black/Pink</p>
+                    <b>490.000 đ</b>
+                </div>
+                <form class="form_check" style="width:100%;text-align: center;">
+                    <div style="background-color: green;" class="checkbox_sizeCTSP">
+                        <input class="input_check" type="radio" value="sizeM"><label style="margin-left: 5px;" for="sizeM">size M</label>
+                    </div>
+                    <div style="background-color: blue;" class="checkbox_sizeCTSP">
+                        <input class="input_check" type="radio" value="sizeL"><label style="margin-left: 5px;" for="sizeM">size L</label>
+                    </div>
+                    <div style="background-color: red;" class="checkbox_sizeCTSP">
+                        <input class="input_check" type="radio" value="sizeS"><label style="margin-left: 5px;" for="sizeM">size S</label>
+                    </div>
+
+                </form>
+                <div class="themgiohang">
+                    <button style="margin-top:20px; width: 100%; padding: 4px; border-color: black;">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+                <div class="muasanpham">
+                    <button style="margin-top:10px; width: 100%;  padding: 4px">MUA NGAY</button>
+                </div>
+                <div class="Content_chitiet" style="padding-left: 10px;margin-top: 10px;">
+                    <b>Chi tiết sản phẩm:</b>
+                    <p>Hoạ tiết logo DIRTYCOINS áp dụng công nghệ in chuyển nhiệt.Thêu tay thủ công logo Y viền bông.</p>
+                </div>
+            </div>
+        </div>
+        <div class="poster_CTSP">
+            <!-- <hr style="width:2px; background-color: black; border: solid;"> -->
+            <div class="titel_poster_CTSP" style="text-align: center; width:100%">
+                <label><h3>GỢI Ý DÀNH CHO BẠN</h3></label>
+            </div>
+            <div class="wrapper wrapper_CTSP">
+
+                <div class="item item_CTSP">
+                    <div class="wrarap_Sanpham">
+                        <img class="img_sanphamWP" src="./image/SP02_DT6.PNG">
+                        <div class="tenSP_WP"><b>Sản Phẩm Áo Thun Đầu Tiền</b></div>
+                        <div class="price_sanphamWP"><b>42.000 đ</b></div>
+                    </div>
+                </div>
+                <div class="item item_CTSP">
+                    <div class="wrarap_Sanpham">
+                        <img class="img_sanphamWP" src="./image/SP01.PNG">
+                        <div class="tenSP_WP"><b style="font-size: 12px;">Sản Phẩm Áo Thun Đầu Tiền</b></div>
+                        <div class="price_sanphamWP"><b>42.000 đ</b></div>
+                    </div>
+                </div>
+                <div class="item item_CTSP">SP1</div>
+                <div class="item item_CTSP">SP1</div>
+                <div class="item item_CTSP">SP1</div>
+                <div class="item item_CTSP">SP1</div>
+                <div class="item item_CTSP">SP1</div>
+                <div class="item item_CTSP">SP1</div>
+                <div class="item item_CTSP">SP1</div>
+                <div class="item item_CTSP">SP1</div>
+                <div class="item item_CTSP">
+                    <div class="wrarap_Sanpham">
+                        <img class="img_sanphamWP" src="./image/SP01.PNG">
+                        <div class="tenSP_WP"><b>Sản Phẩm Áo Thun Đầu Tiền</b></div>
+                        <div class="price_sanphamWP"><b>42.000 đ</b></div>
+                    </div>
+                </div>
+                <div class="item item_CTSP">SP1</div>
+                <div class="item item_CTSP">SP1</div>
+                <div class="item item_CTSP">SP1</div>
+                <div class="item item_CTSP">SP1</div>
+            </div>
+            <div class="titel_poster_CTSP" style="text-align: center; width:100%">
+                <label><h3>SẢN PHẨM LIÊN QUAN</h3></label>
+            </div>
+            <div style="width:100%; text-align: center;" class="row  row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col-3 item_sanpham">
+                    <img class="img_sanpham" src="./image/SP02_DT6.PNG">
+                    <div class="name_sanpham"><b>Sản Phẩm Áo Thun Đầu Tiền</b></div>
+                    <div class="price_sanpham"><b>42.000 đ</b></div>
+                </div>
+                <div class="col-3 item_sanpham">
+                    <img class="img_sanpham" src="./image/SP02_DT6.PNG">
+                    <div class="name_sanpham"><b>Sản Phẩm Áo Thun Đầu Tiền</b></div>
+                    <div class="price_sanpham"><b>42.000 đ</b></div>
+                </div>
+                <div class="col-3 item_sanpham">
+                    <img class="img_sanpham" src="./image/SP02_DT6.PNG">
+                    <div class="name_sanpham"><b>Sản Phẩm Áo Thun Đầu Tiền</b></div>
+                    <div class="price_sanpham"><b>42.000 đ</b></div>
+                </div>
+                <div class="col-3 item_sanpham">
+                    <img class="img_sanpham" src="./image/SP02_DT6.PNG">
+                    <div class="name_sanpham"><b>Sản Phẩm Áo Thun Đầu Tiền</b></div>
+                    <div class="price_sanpham"><b>42.000 đ</b></div>
+                </div>
+                <div class="col-3 item_sanpham">
+                    <img class="img_sanpham" src="./image/SP02_DT6.PNG">
+                    <div class="name_sanpham"><b>Sản Phẩm Áo Thun Đầu Tiền</b></div>
+                    <div class="price_sanpham"><b>42.000 đ</b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
